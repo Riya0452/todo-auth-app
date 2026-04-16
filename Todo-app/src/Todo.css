@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body{
+  margin:0;
+  padding:0;
+  background:linear-gradient(135deg,#0f0c29,#302b63,#24243e);
+  font-family:Arial,sans-serif;
+}
+
+/* MAIN CONTAINER */
+.todo-container{
+  width:500px;
+  margin:50px auto;
+  padding:25px;
+  border-radius:20px;
+  background:#1e1e2f;
+  box-shadow:0 0 25px rgba(138,43,226,0.4);
+  border:2px solid #8a2be2;
+}
+
+.todo-container h1{
+  text-align:center;
+  color:white;
+  text-shadow:0 0 10px #8a2be2;
+}
+
+/* INPUT SECTION */
+.input-box{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.input-box input{
+  width:70%;
+  padding:12px;
+  border-radius:10px;
+  border:2px solid #8a2be2;
+  background:#2d2d44;
+  color:white;
+  outline:none;
+  box-shadow:0 0 10px rgba(138,43,226,0.3);
+}
+
+.input-box input::placeholder{
+  color:#aaa;
+}
+
+/* BUTTONS */
+button{
+  padding:10px 15px;
+  margin:5px;
+  border:none;
+  border-radius:10px;
+  cursor:pointer;
+  font-weight:bold;
+  transition:0.3s ease;
+}
+
+button:hover{
+  transform:scale(1.08);
+  box-shadow:0 0 15px #8a2be2;
+}
+
+.add-btn{
+  background:linear-gradient(45deg,#8a2be2,#4b00ff);
+  color:white;
+  box-shadow:0 0 15px #8a2be2;
+}
+
+.edit-btn{
+  background:linear-gradient(45deg,#ff9800,#ff5722);
+  color:white;
+  box-shadow:0 0 15px orange;
+}
+
+.delete-btn{
+  background:linear-gradient(45deg,#ff0000,#b30000);
+  color:white;
+  box-shadow:0 0 15px red;
+}
+
+.complete-btn{
+  background:linear-gradient(45deg,#00c853,#00e676);
+  color:white;
+  box-shadow:0 0 15px lime;
+}
+
+/* TASKS CONTAINER */
+.main-item{
+  margin-top:20px;
+}
+
+/* EACH TASK CARD */
+.task-item{
+  background:#2d2d44;
+  padding:15px;
+  margin-top:15px;
+  border-radius:15px;
+  border-left:5px solid #8a2be2;
+  color:white;
+  box-shadow:0 0 10px rgba(255,255,255,0.05);
+  transition:0.3s;
+}
+
+.task-item:hover{
+  transform:translateY(-3px);
+  box-shadow:0 0 20px #8a2be2;
+}
+
+/* TOP ROW = TASK + TIME */
+.task-top{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:10px;
+}
+
+/* TASK TEXT */
+.task-text{
+  font-size:22px;
+  font-weight:bold;
+  color:white;
+  letter-spacing:1px;
+  font-family:'Poppins',sans-serif;
+  text-align:left;
+}
+
+/* TIME */
+.task-time{
+  font-size:13px;
+  color:#bbb;
+}
+
+/* BUTTON ROW */
+.task-buttons{
+  display:flex;
+  justify-content:flex-end;
+  gap:8px;
+  flex-wrap:wrap;
+}
+
+/* PROGRESS BAR */
+.progress-bar{
+  width:100%;
+  background:#444;
+  height:20px;
+  border-radius:10px;
+  overflow:hidden;
+  margin:10px 0;
+}
+
+.progress-fill{
+  height:100%;
+  background:limegreen;
+  transition:0.5s;
+}
+
+/* COMPLETED TEXT */
+.completed{
+  text-decoration:line-through;
+  color:gray;
+}
+/*icons*/
+.icons{
+  display: flex;
+ justify-content:  center;
+}
+/*RESPONSIVE DESIGN  */
+
+@media (max-width:768px){
+
+  .todo-container{
+    width:90%;
+    margin:30px auto;
+    padding:20px;
+  }
+
+  .todo-container h1{
+    font-size:28px;
+  }
+
+  .input-box{
+    flex-direction:column;
+    gap:15px;
+  }
+
+  .input-box input{
+    width:100%;
+  }
+
+  .task-top{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:8px;
+  }
+
+  .task-text{
+    font-size:18px;
+  }
+
+  .task-time{
+    font-size:12px;
+  }
+
+  .task-buttons{
+    justify-content:center;
+    width:100%;
+  }
+
+  button{
+    width:100%;
+    padding:12px;
+  }
+
+}
+
+
+@media (max-width:480px){
+
+  .todo-container{
+    width:95%;
+    padding:15px;
+    border-radius:15px;
+  }
+
+  .todo-container h1{
+    font-size:24px;
+  }
+
+  .task-text{
+    font-size:16px;
+  }
+
+  .task-item{
+    padding:12px;
+  }
+
+  .progress-bar{
+    height:15px;
+  }
+
+  button{
+    font-size:14px;
+    padding:10px;
+  }
+
+}

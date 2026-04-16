@@ -1,0 +1,17 @@
+.about-container{
+  width:80%;
+  margin:40px auto;
+  padding:20px;
+  background:#1e1e2f;
+  color:white;
+  border-radius:15px;
+  box-shadow:0 0 20px #8a2be2;
+}
+
+.about-container h1{
+  color:#8a2be2;
+}
+
+.about-container ul{
+  padding-left:20px;
+}
