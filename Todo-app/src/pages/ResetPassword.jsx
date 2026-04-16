@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "./Auth.css";
+import "./auth.css";
 
 function ResetPassword() {
   const [id, setId] = useState("");
