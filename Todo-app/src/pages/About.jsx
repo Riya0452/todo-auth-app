@@ -24,7 +24,7 @@ function About() {
         This app is designed to improve productivity and help users stay organized.
       </p>
 
-      <h3>Created By: Misty 💜</h3>
+      <h3>Created By: Riya 💜</h3>
     </div>
   );
 }
